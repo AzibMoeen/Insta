@@ -13,7 +13,7 @@ export default defineConfig({
     proxy: {
       // Proxy API requests to the backend server
       "/api": {
-        target: "http://localhost:8000",
+        target: "https://sea-lion-app-hc6ju.ondigitalocean.app",
         changeOrigin: true,
         secure: false, // Set this to `true` if your backend uses HTTPS with a valid certificate
         rewrite: (path) => path.replace(/^\/api/, ""), // Remove `/api` from the proxied request
