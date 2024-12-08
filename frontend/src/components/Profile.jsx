@@ -44,7 +44,7 @@ const Profile = () => {
   const handleFollow = async () => {
     try {
       const res = await axios.post(
-        `http://localhost:8000/api/v1/user/followorunfollow/${userProfile?._id}`,
+        `/api/api/v1/user/followorunfollow/${userProfile?._id}`,
         {},
         { withCredentials: true }
       );
