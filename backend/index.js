@@ -22,7 +22,8 @@ app.use(cookieParser());
 app.use(urlencoded({ extended: true }));
 const corsOptions = {
     origin: 'https://insta-flame-seven.vercel.app',
-}
+    credentials: true, // Include this if you're using cookies or `withCredentials`
+};
 app.use(cors(corsOptions));
 
 // yha pr apni api ayengi
