@@ -60,7 +60,13 @@ export const login = async (req, res) => {
             });
         };
 
-        const token = await jwt.sign({ userId: user._id }, process.env.SECRET_KEY, { expiresIn: '1d' });
+        const token =  jwt.sign({ userId: user._id }, process.env.SECRET_KEY, { expiresIn: '1d' });
+        if (!token) {
+            return res.status(500).json({
+                message: "Something went wrong, please try again",
+                success: false,
+            });
+        }
 
 
         const populatedPosts = await Promise.all(
