@@ -44,7 +44,7 @@ const Profile = () => {
   const handleFollow = async () => {
     try {
       const res = await axios.post(
-        `/api/api/v1/user/followorunfollow/${userProfile?._id}`,
+        `https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/user/followorunfollow/${userProfile?._id}`,
         {},
         { withCredentials: true }
       );

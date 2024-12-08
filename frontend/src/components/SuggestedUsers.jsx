@@ -8,7 +8,7 @@ const SuggestedUsers = () => {
     const handleFollow = async () => {
         try {
           const res = await axios.post(
-            `http://localhost:8000/api/v1/user/followorunfollow/${user._id}`,
+            `https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/user/followorunfollow/${user._id}`,
             {},
             { withCredentials: true }
           );

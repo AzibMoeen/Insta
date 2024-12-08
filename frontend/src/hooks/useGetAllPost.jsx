@@ -9,7 +9,7 @@ const useGetAllPost = () => {
     useEffect(() => {
         const fetchAllPost = async () => {
             try {
-                const res = await axios.get('/api/api/v1/post/all', { withCredentials: true });
+                const res = await axios.get('https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/post/all', { withCredentials: true });
                 if (res.data.success) { 
                     console.log(res.data.posts);
                     dispatch(setPosts(res.data.posts));

@@ -55,7 +55,7 @@ function App() {
 
   useEffect(() => {
     if (user) {
-      const socketio = io('/api', {
+      const socketio = io('https://sea-lion-app-hc6ju.ondigitalocean.app', {
         query: {
           userId: user?._id
         },

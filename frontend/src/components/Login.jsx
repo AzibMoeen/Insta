@@ -26,7 +26,7 @@ const Login = () => {
         e.preventDefault();
         try {
             setLoading(true);
-            const res = await axios.post('/api/api/v1/user/login', input, {
+            const res = await axios.post('https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/user/login', input, {
                 headers: {
                     'Content-Type': 'application/json'
                 },

@@ -42,7 +42,7 @@ const EditProfile = () => {
         }
         try {
             setLoading(true);
-            const res = await axios.post('/api/api/v1/user/profile/edit', formData,{
+            const res = await axios.post('https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/user/profile/edit', formData,{
                 headers:{
                     'Content-Type':'multipart/form-data'
                 },

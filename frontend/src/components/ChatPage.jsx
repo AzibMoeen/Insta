@@ -17,7 +17,7 @@ const ChatPage = () => {
 
     const sendMessageHandler = async (receiverId) => {
         try {
-            const res = await axios.post(`/api/api/v1/message/send/${receiverId}`, { textMessage }, {
+            const res = await axios.post(`https://sea-lion-app-hc6ju.ondigitalocean.app/api/v1/message/send/${receiverId}`, { textMessage }, {
                 headers: {
                     'Content-Type': 'application/json'
                 },
