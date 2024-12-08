@@ -255,7 +255,7 @@ const searchhUser = async (req, res) => {
 export const Allfollowers = async (req, res) => {
     const { id } = req.params;
     try {
-        // Fetch the user by ID
+     
         const user = await User.findById(id).exec();
 
         if (!user) {
